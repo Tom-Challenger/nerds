@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Дизайн студия "Nerds"</title>
+	<title>Дизайн-студия "Nerds"</title>
 </head>
 <body>
 	<header>
@@ -58,35 +58,35 @@
 	</header>
 	<main class="container">
 		<section class="services">
-			<h2 class="visually-hidden">Услуги</h2>
-			<ul>
+			<h2 class="visually-hidden">Наши услуги</h2>
+			<ul class="services__items">
 				<li>
-					<img src="img/" alt="Уникальный сайт">
+					<!-- Декоративное изображение ::before <img src="img/" alt="Уникальный сайт"> -->
 					<h3>Вэб-сайты</h3>
 					<p>Мир никогда не будет преждним, после того как увидит ваш сайт!</p>
 					<a class="btn" href="#">Заказать</a>
 				</li>
 				<li>
-					<img src="" alt="Идеальное мобильное приложение">
+					<!-- Декоративное изображение ::before <img src="" alt="Идеальное мобильное приложение"> -->
 					<h3>Приложения</h3>
 					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
 					<a class="btn" href="#">Заказать</a>
 				</li>
 				<li>
-					<img src="" alt="Незабываемая презентация">
+					<!-- Декоративное изображение ::before <img src="" alt="Незабываемая презентация"> -->
 					<h3>Презентации</h3>
 					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
 					<a class="btn" href="#">Заказать</a>
 				</li>
 			</ul>
 		</section>
-		<section class="about-us">
+		<section class="about">
 			<div>
 				<h1 class="visually-hidden">Нердс - Дизайн-студия из Краснодара</h1>
 				<p><b>Мы - маленькая, но гордая дизийн-студия из Краснодара.</b></p>
 				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук как роботы.</p>
 				<h2>Выполняем заказы на разработку:</h2>
-				<ul class="about-us__services">
+				<ul class="about__services">
 					<li>Веб-сайтов любой сложности</li>
 					<li>Мобильных приложений для iOS и Android</li>
 					<li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -96,10 +96,55 @@
 				<img src="" alt="Мы дизайн-студия 'Нёрдс'">
 				<p>C 2004 года любим точность во всем:</p>
 				<table>
-					
+					<thead class="visually-hidden">
+						<tr>
+							<td>Характеристика</td>
+							<td>Величина</td>
+						</tr>
+					</thead>
+					<tbody class="table__body_transposed_left">
+					<tr>
+						<td>Уровень самоотдачи</td>
+						<td>146<span class="sup">%</span></td>
+					</tr>
+					<tr>
+						<td>Соблдение сроков</td>
+						<td>100<span class="sup">%</span></td>
+					</tr>
+					<tr>
+						<td>Минимальная предоплата</td>
+						<td>50<span class="sup">%</span></td>
+					</tr>
+					</tbody>
 				</table>
 			</div>
 		</section>
+		<section class="partners">
+			<h2 class="visually-hidden">Наши партнеры</h2>
+			<ul class="partners__items">
+				<li><a href=""><img src="img/htmlacademy-logo-pantner.png" alt="HTML-academy"></a></li>
+				<li><a href=""><img src="img/borodinski-logo-pantner.png" alt="Barbershop 'Borodinski'"></a></li>
+				<li><a href=""><img src="img/pink-logo-pantner.png" alt="pink"></a></li>
+				<li><a href=""><img src="img/mishka-logo-pantner.png" alt="Mishka"></a></li>
+			</ul>
+		</section>
+		<section class="contacts">
+			
+		</section>
 	</main>
+	<footer class="page-footer">
+		<div class="container">
+			<div class="footer-group footer-group-social clearfix">
+				<h2 class="visually-hidden">Мы в социальных сетях</h2>
+				<ul>
+					<li><a class="social social-vk" href="#"><img src="img/vk-icon.svg" alt="ВКонтакте"></a></li>
+					<li><a class="social social-fb" href="#"><img src="img/fb-icon.svg" alt="Файсбук"></a></li>
+					<li><a class="social social-in" href="#"><img src="img/in-icon.svg" alt="Инстаграмм"></a></li>
+				</ul>
+				<p><b>Давайте дружить, это выгодно!</b></p>
+				<p>Скидка 10% для друзей из социальных сетей.</p>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
