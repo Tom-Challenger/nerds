@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Каталог | Дизайн-студия "Nerds"</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="page-header_top">
+				<div><img src="img/nerds-logo.svg" alt="Логотип дизайн студии 'Nerds'" width="160" height="65"></div>
+				<nav>
+					<ul>
+						<li><a href="#">Студия</a></li>
+						<li><a href="#">Клиенты</a></li>
+						<li><a href="#">Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<div><a href="#">Корзина</a></div>
+				</nav>
+			</div>
+
+			<!-- Загаловок страницы -->
+			<div class="page-header__title">
+				<h1>Магазин готовых шаблонов</h1>
+			</div>
+		</div>
+	</header>
+	<main class="container">
+		<!-- Раздел форма фильтр каталога -->
+		<section class="filter">
+			<h2 class="visually-hidden">Фильтр товаров</h2>
+			<form class="filter-form" mothod="post" action="#">
+
+				<fieldset class="form-fieldset fieldset-range">
+					<legend class="legend legend-price">Стоимость:</legend>
+					<!-- Пример: Двойной ползунок range -->
+					<div class="range-control-scale">
+						<div class="scale">
+							<div class="bar" style="margin-left: 0; width: 150px"></div>
+						</div>
+						<div class="toggle toggle-min"></div>
+						<div class="toggle toggle-max"></div>
+					</div>
+
+					<div class="range-control-field">
+						<label class="min-price">от<input name="min-price" type="text" value="0"></label>
+						<label class="max-price">до<input name="max-price" type="text" value="15000"></label>
+					</div>
+				</fieldset>
+
+				<fieldset class="form-fieldset fieldset-radio">
+				<legend class="legend">Сетка:</legend>
+					<label for="radio-1"><input class="radio" id="radio-1" type="radio" name="adaptive" disabled>Адаптивная</label>
+					<label for="radio-2"><input class="radio" id="radio-2" type="radio" name="fixed">Фиксированная</label>
+					<label for="radio-3"><input class="radio" id="radio-3" type="radio" name="rubber">Резиновая</label>
+				</fieldset>
+
+				<fieldset class="form-fieldset">
+					<legend class="legend legend-last">Особености:</legend>
+					<label for="check-1"><input class="checkbox" id="check-1" type="checkbox" name="slider" disabled>Слайдер</label>
+					<label for="check-2"><input class="checkbox" id="check-2" type="checkbox" name="block">Блок преимуществ</label>
+					<label for="check-3"><input class="checkbox" id="check-3" type="checkbox" name="news">Новости</label>
+					<label for="check-4"><input class="checkbox" id="check-4" type="checkbox" name="gallery">Галерея</label>
+					<label for="check-5"><input class="checkbox" id="check-5" type="checkbox" name="basket">Корзина</label>
+				</fieldset>
+
+				<button class="btn btn-show" type="submit">Показать</button>
+			</form>
+		</section>
+
+		<section>
+
+
+			<!-- Пагинатор (Навигация страниц) -->
+			<ul class="pagination-list">
+				<li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+				<li class="pagination-item"><a href="#">2</a></li>
+				<li class="pagination-item"><a href="#">3</a></li>
+				<li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
+			</ul>
+		</section>
+	</main>
+</body>
+</html>
