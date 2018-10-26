@@ -25,9 +25,11 @@ a {
 	border: none;
 }
 
-.button--bg-c--red {background-color: red;}
+.button--bg-c--red {background-color: #fb565a;}
 .button--bg-c--blue {background-color: blue;}
 .button--bg-c--green {background-color: green;}
+
+.button:hover {color: #fb565a;}
 
 ul {
 	list-style: none;
