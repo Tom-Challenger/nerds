@@ -124,6 +124,55 @@ a {
 
 .arrow--down.--active:before,
 .arrow--down:active:before {border-top-color: #231f20; opacity: 1;}
+
+.range-control-scale {
+	position: relative;
+
+	height: 41px;
+	margin-bottom: 15px;
+	padding-top: 39px;
+	padding-right: 20px;
+	padding-left: 20px;
+
+	background: #f1f1f1;
+	border-radius: 5px;
+}
+
+.scale {
+	height: 2px;
+
+	background: #d7dcde;
+}
+
+.bar {
+	width: 80%;
+	height: 2px;
+	margin-left: 0;
+
+	background: #00ca74;
+}
+
+.toggle {
+	position: absolute;
+	top: 31px;
+	left: 0;
+	
+	width: 4px;
+	height: 4px;
+	padding: 0;
+	
+	background: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+
+	cursor: pointer;
+}
+
+.toggle-min {left: 18px;}
+.toggle-max {left: 160px;}
+
+
 /*end pixel perfect*/
 
 ul {
@@ -424,19 +473,46 @@ ul {
 	background: #fb565a;
 }
 
+.about__caption-table {
+	margin: 35px 0 20px 0;
+
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
 /*raw*/
 .about__table {
 	width: inherit;
 }
 
-.about__table-caption {
-	font-weight: 700;
-	text-transform: uppercase;
+.table__body {
+	display: flex;
+	width: inherit;
 }
 
-.about__table td {
-	text-align: left;
-	vertical-align: middle;
+.table__row {
+	display: flex;
+	flex-direction: column-reverse;
+	width: 33%;
+}
+
+.table__description {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.table__value {
+	padding-bottom: 20px;
+
+	font-size: 45px;
+	line-height: 52px;
+	font-weight: 700;
+}
+
+.table__value--sup {
+	font-size: 0.5em;
+	vertical-align: super;
 }
 /*end raw*/
 
@@ -476,6 +552,50 @@ ul {
 .filter {
 	width: 260px;
 	margin-right: 140px;
+}
+
+.filter-form {
+
+}
+
+.form-fieldset {
+	margin: 0;
+	padding: 0;
+
+	border: none;
+}
+
+.fieldset-range {
+	width: 260px;
+	margin-top: 49px;
+}
+
+.legend {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+.legend-price {
+
+}
+
+.range-control-field {
+
+}
+
+.range-control-field label {
+	display: inline;
+	width: 50%;
+}
+
+.min-price {
+
+}
+
+.max-price {
+
 }
 
 .catalog {
