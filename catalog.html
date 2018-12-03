@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Каталог | Дизайн-студия "Nerds"</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
+	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">  -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -36,7 +36,7 @@
 			<form class="filter-form" mothod="post" action="#">
 
 				<fieldset class="form-fieldset fieldset-range">
-					<legend class="legend legend-price">Стоимость:</legend>
+					<legend class="legend legend-filter--price">Стоимость:</legend>
 					<!-- Пример: Двойной ползунок range -->
 					<div class="range-control-scale">
 						<div class="scale">
@@ -53,22 +53,50 @@
 				</fieldset>
 
 				<fieldset class="form-fieldset fieldset-radio">
-				<legend class="legend">Сетка:</legend>
-					<label for="radio-1"><input class="radio" id="radio-1" type="radio" name="adaptive" disabled>Адаптивная</label>
-					<label for="radio-2"><input class="radio" id="radio-2" type="radio" name="fixed">Фиксированная</label>
-					<label for="radio-3"><input class="radio" id="radio-3" type="radio" name="rubber">Резиновая</label>
+					<legend class="legend legend-filter--grid">Сетка:</legend>
+					<ul>
+						<li class="control-filter">
+							<input class="control-radio hidden" id="control-radio--1" type="radio" name="filter--grid" value="adaptive" disabled>
+							<label class="control-filter--grid" for="control-radio--1">Адаптивная</label>
+						</li>
+						<li class="control-filter">
+							<input class="control-radio hidden" id="control-radio--2" type="radio" name="filter--grid" value="fixed" checked>
+							<label class="control-filter--grid" for="control-radio--2">Фиксированная</label>
+						</li>
+						<li class="control-filter">
+							<input class="control-radio hidden" id="control-radio--3" type="radio" name="filter--grid" value="fluid">
+							<label class="control-filter--grid" for="control-radio--3">Резиновая</label>
+						</li>
+					</ul>
 				</fieldset>
 
-				<fieldset class="form-fieldset">
-					<legend class="legend legend-last">Особености:</legend>
-					<label for="check-1"><input class="checkbox" id="check-1" type="checkbox" name="slider" disabled>Слайдер</label>
-					<label for="check-2"><input class="checkbox" id="check-2" type="checkbox" name="features">Блок преимуществ</label>
-					<label for="check-3"><input class="checkbox" id="check-3" type="checkbox" name="news">Новости</label>
-					<label for="check-4"><input class="checkbox" id="check-4" type="checkbox" name="gallery">Галерея</label>
-					<label for="check-5"><input class="checkbox" id="check-5" type="checkbox" name="basket">Корзина</label>
+				<fieldset class="form-fieldset fieldset-checkbox">
+					<legend class="legend legend-filter--capability">Особености:</legend>
+					<ul>
+						<li>
+							<input class="control-checkbox hidden" id="control-checkbox--1" type="checkbox" name="filter--capability--slider" value="slider" disabled>
+							<label class="control-filter--capability" for="control-checkbox--1">Слайдер</label>
+						</li>
+						<li>
+							<input class="control-checkbox hidden" id="control-checkbox--2" type="checkbox" name="filter--capability--features" value="features">
+							<label class="control-filter--capability" for="control-checkbox--2">Блок преимуществ</label>
+						</li>
+						<li>
+							<input class="control-checkbox hidden" id="control-checkbox--3" type="checkbox" name="filter--capability--news" value="news">
+							<label class="control-filter--capability" for="control-checkbox--3">Новости</label>
+						</li>
+						<li>
+							<input class="control-checkbox hidden" id="control-checkbox--4" type="checkbox" name="filter--capability--gallery" value="gallery">
+							<label class="control-filter--capability" for="control-checkbox--4">Галерея</label>
+						</li>
+						<li>
+							<input class="control-checkbox hidden" id="control-checkbox--5" type="checkbox" name="filter--capability--basket" value="basket">
+							<label class="control-filter--capability" for="control-checkbox--5">Корзина</label>
+						</li>
+					</ul>
 				</fieldset>
 
-				<button class="btn btn-show" type="submit">Показать</button>
+				<button class="button filter__button-show button--c--black button--bg-c--gray" type="submit">Показать</button>
 			</form>
 		</section>
 
@@ -200,10 +228,10 @@
 
 			<!-- Пагинатор (Навигация страниц) -->
 			<ul class="pagination-list">
-				<li class="pagination-item"><a class="pagination-item__link --current" href="#">1</a></li>
-				<li class="pagination-item"><a class="pagination-item__link" href="#">2</a></li>
-				<li class="pagination-item"><a class="pagination-item__link" href="#">3</a></li>
-				<li class="pagination-item"><a class="pagination-item__link pagination-item__link-next" href="#">Следующая</a></li>
+				<li class="pagination-item"><a class="pagination-item__link button--c--black --current" href="#">1</a></li>
+				<li class="pagination-item"><a class="pagination-item__link button--c--black" href="#">2</a></li>
+				<li class="pagination-item"><a class="pagination-item__link button--c--black" href="#">3</a></li>
+				<li class="pagination-item"><a class="pagination-item__link button--c--black pagination-item__link-next" href="#">Следующая</a></li>
 			</ul>
 		</section>
 	</main>
