@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Дизайн-студия "Nerds"</title>
-	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">  -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -160,20 +160,21 @@
 
 	<!-- Попап форма обратной связи -->
 	<div class="modal modal-feedback hidden">
+		<h2 class="feedback-form__title">Напишите нам</h2>
 		<form class="feedback-form" action="#" method="get">
 			<div class="form-field field-name">
 				<label for="field-name">Ваше имя:</label>
-				<input type="text" name="name" placeholder="Представьтесь, пожалуйста" id="field-name">
+				<input type="text" name="name" placeholder="Имя Фамилия" id="field-name">
 			</div>
 			<div class="form-field field-email">
 				<label for="field-email">Ваш e-mail:</label>
-				<input type="email" name="email" placeholder="Для отправки ответа" id="field-email">
+				<input type="email" name="email" placeholder="email@example.com" id="field-email">
 			</div>
 			<div class="form-field field-text">
 				<label for="field-text">Текст письма:</label>
 				<textarea name="text" placeholder="В свободной форме" id="field-text"></textarea>
 			</div>
-			<button class="btn btn-send" type="submit">Отправить</button>
+			<button class="button feedback-form__button-send button--bg-c--red" type="submit">Отправить</button>
 		</form>
 		<button class="modal-feedback-close" type="button" title="Закрыть">Закрыть</button>
 	</div>

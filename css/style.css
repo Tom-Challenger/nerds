@@ -1,4 +1,4 @@
-﻿@font-face {
+@font-face {
     font-family: 'Roboto';
     src: 
          url('../fonts/roboto.woff') format('woff'),
@@ -63,7 +63,7 @@ a {
 }
 
 .button {
-	padding: 10px 10px;
+	padding: 15px 10px;
 
 	font: inherit;
 	font-weight: 500;
@@ -109,6 +109,12 @@ a {
 .business-card__button-feedback-open {
 	display: block;
 	width: 220px;
+	box-sizing: border-box;
+}
+
+.feedback-form__button-send {
+	display: block;
+	width: 260px;
 	box-sizing: border-box;
 }
 
@@ -1154,4 +1160,147 @@ ul {
 
 	line-height: 22px; 
 	color: #444444;
+}
+
+/*pop up*/
+.modal {
+	position: fixed;
+
+	padding: 70px 100px;
+
+	background: #ffffff;
+	box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+
+	box-sizing: border-box;
+}
+
+.modal-feedback {
+	top: 100px;
+	left: 50%;
+
+	width: 960px;
+	margin-left: -480px;
+}
+
+.modal-feedback-close {
+	position: absolute;
+	top: 85px;
+	right: 88px;
+
+	width: 30px;
+	height: 28px;
+
+	font-size: 0;
+
+	background: transparent;
+	border: 0;
+
+	cursor: pointer;
+}
+
+.modal-feedback-close::before,
+.modal-feedback-close::after {
+	content: "";
+
+	position: absolute;
+	top: 10px;
+	left: 2px;
+
+	width: 28px;
+	height: 3px;
+
+	background-color: #fecccd;
+	border-radius: 2px;
+}
+
+.modal-feedback-close::before {
+	transform: rotate(45deg);
+}
+.modal-feedback-close::after {
+	transform: rotate(-45deg);
+}
+
+.feedback-form__title {
+	padding: 0;
+	margin:	0;
+	margin-bottom: 45px;
+
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+}
+
+.feedback-form {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.form-field {
+	display: block;
+	margin-bottom: 35px;
+}
+
+.form-field:last-of-type {
+	margin-bottom: 45px;
+}
+
+.field-name,
+.field-email {
+	width: 45%;
+}
+
+.field-text {
+	width: 100%;
+}
+
+.form-field label {
+	display: block;
+	margin-bottom: 5px;
+
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+
+	font: inherit;
+	color: rgba(44, 44, 44, 0.5);
+
+	background: white;
+	border: 2px solid #d7dcde;
+}
+
+.feedback-form textarea {
+	height: 120px;
+	resize: none;
+}
+
+.feedback-form input[type="text"]:hover,
+.feedback-form input[type="email"]:hover,
+.feedback-form textarea:hover {
+	color: #444444;
+	border-color: #b4b9bb;
+}
+
+.feedback-form input[type="text"]:focus,
+.feedback-form input[type="email"]:focus,
+.feedback-form textarea:focus {
+	color: #444444;
+	border-color: #000000;
+}
+
+.feedback-form input[type="text"]:invalid,
+.feedback-form input[type="email"]:invalid,
+.feedback-form textarea:invalid {
+	color: #e74246;
+	border-color: #e74246;
+	box-shadow: none;
 }

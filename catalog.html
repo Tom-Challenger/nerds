@@ -228,10 +228,10 @@
 
 			<!-- Пагинатор (Навигация страниц) -->
 			<ul class="pagination-list">
-				<li class="pagination-item"><a class="pagination-item__link button--c--black --current" href="#">1</a></li>
-				<li class="pagination-item"><a class="pagination-item__link button--c--black" href="#">2</a></li>
-				<li class="pagination-item"><a class="pagination-item__link button--c--black" href="#">3</a></li>
-				<li class="pagination-item"><a class="pagination-item__link button--c--black pagination-item__link-next" href="#">Следующая</a></li>
+				<li class="pagination-item"><a class="pagination-item__link --current" href="#">1</a></li>
+				<li class="pagination-item"><a class="pagination-item__link" href="#">2</a></li>
+				<li class="pagination-item"><a class="pagination-item__link" href="#">3</a></li>
+				<li class="pagination-item"><a class="pagination-item__link pagination-item__link-next" href="#">Следующая</a></li>
 			</ul>
 		</section>
 	</main>
@@ -263,5 +263,26 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- Попап форма обратной связи -->
+	<div class="modal modal-feedback hidden">
+		<h2 class="feedback-form__title">Напишите нам</h2>
+		<form class="feedback-form" action="#" method="get">
+			<div class="form-field field-name">
+				<label for="field-name">Ваше имя:</label>
+				<input type="text" name="name" placeholder="Имя Фамилия" id="field-name">
+			</div>
+			<div class="form-field field-email">
+				<label for="field-email">Ваш e-mail:</label>
+				<input type="email" name="email" placeholder="email@example.com" id="field-email">
+			</div>
+			<div class="form-field field-text">
+				<label for="field-text">Текст письма:</label>
+				<textarea name="text" placeholder="В свободной форме" id="field-text"></textarea>
+			</div>
+			<button class="button feedback-form__button-send button--bg-c--red" type="submit">Отправить</button>
+		</form>
+		<button class="modal-feedback-close" type="button" title="Закрыть">Закрыть</button>
+	</div>	
 </body>
 </html>
